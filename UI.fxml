@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="696.0" prefWidth="582.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Polynomial.Controller">
+   <children>
+      <Label layoutX="224.0" layoutY="20.0" text="Polynomial Expressions">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="poly1" layoutX="32.0" layoutY="269.0" prefHeight="25.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="poly2" layoutX="305.0" layoutY="269.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="op" layoutX="222.0" layoutY="270.0" prefHeight="25.0" prefWidth="47.0" />
+      <Button fx:id="calc" layoutX="482.0" layoutY="270.0" mnemonicParsing="false" onAction="#calculate" prefWidth="71.0" text="Calculate" textFill="#720000">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <TextField fx:id="res1" editable="false" layoutX="96.0" layoutY="313.0" prefHeight="25.0" prefWidth="443.0" />
+      <Label layoutX="43.0" layoutY="317.0" text="Result =">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="226.0" layoutY="228.0" text="Polynomial Operations">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="157.0" layoutY="371.0" text="The variable X =">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="sub" layoutX="368.0" layoutY="367.0" mnemonicParsing="false" onAction="#substitute" text="Substitute X" textFill="#720000">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <TextField fx:id="res2" editable="false" layoutX="335.0" layoutY="401.0" />
+      <TextField layoutX="256.0" layoutY="367.0" prefHeight="25.0" prefWidth="94.0" text="" fx:id="x" />
+      <Label layoutX="98.0" layoutY="405.0" text="X substitution in the result polynomial =">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <ListView fx:id="list" layoutX="22.0" layoutY="48.0" prefHeight="168.0" prefWidth="541.0">
+         <effect>
+            <InnerShadow blurType="TWO_PASS_BOX" />
+         </effect></ListView>
+      <Label layoutX="240.0" layoutY="460.0" text="Extra Operaions">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Line disable="true" endX="100.0" layoutX="291.0" layoutY="443.0" opacity="0.66" scaleX="3.0" startX="-100.0" strokeMiterLimit="30.0" AnchorPane.leftAnchor="190.5" AnchorPane.rightAnchor="190.5" />
+      <Label layoutX="159.0" layoutY="627.0" text="The variable X =">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="sub2" layoutX="370.0" layoutY="623.0" mnemonicParsing="false" onAction="#substituteInAll" text="Substitute X" textFill="#720000">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <TextField fx:id="res4" editable="false" layoutX="337.0" layoutY="657.0" />
+      <TextField layoutX="258.0" layoutY="623.0" prefHeight="25.0" prefWidth="94.0" text="" fx:id="x2" />
+      <Label layoutX="100.0" layoutY="661.0" text="X substitution in the result polynomial =">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="mulAll" layoutX="182.0" layoutY="527.0" mnemonicParsing="false" onAction="#multiplyAll" prefHeight="25.0" prefWidth="86.0" text="Multiply all" textFill="#720000">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="subAll" layoutX="318.0" layoutY="527.0" mnemonicParsing="false" onAction="#subtractAll" prefHeight="25.0" prefWidth="86.0" text="Subtract all" textFill="#720000">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="addAll" layoutX="257.0" layoutY="499.0" mnemonicParsing="false" onAction="#addAll" prefWidth="71.0" text="Add all" textFill="#720000">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <TextField fx:id="res3" editable="false" layoutX="96.0" layoutY="567.0" prefHeight="25.0" prefWidth="443.0" />
+      <Label layoutX="43.0" layoutY="571.0" text="Result =">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button layoutX="548.0" layoutY="671.0" mnemonicParsing="false" onAction="#exit" text="exit" />
+   </children>
+</AnchorPane>
