@@ -11,3 +11,9 @@ fval=f(x);
 fval(find(fval==inf))=realmax;
 fval(find(fval==-inf))=-realmax;
 area=3*h/8*(fval(1)+fval(n+1)+3*sum(fval(2:n))-sum(fval(4:3:n-2)));
+
+f=@(x)sqrt(sin(x))
+a=0;
+b=pi/2;
+n=6;
+area=S38rule(f,a,b,n)
