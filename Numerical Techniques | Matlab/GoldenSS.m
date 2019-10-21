@@ -4,7 +4,6 @@ f = str2func(['@(x) ' s]);
 a = input ('Enter lower boundary point: ');
 b = input ('Enter upper boundary point: ');
 sn = input ('Enter a very small number: ');
-
 k = 2;
 a_new = a;
 b_new = b;
