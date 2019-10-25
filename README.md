@@ -1,4 +1,4 @@
 # Runscreens
-<img src="Images/PolynomialCalculator.png">
-<img src="Images/GraphOne.png">
-<img src="Images/GraphTwo.png">
+<img src="Images/PolynomialCalculator.jpg">
+<img src="Images/Graphone.png">
+<img src="Images/Graphtwo.png">
